@@ -37,9 +37,8 @@ fn get_fib_until_digit_amount(n: usize) -> u128 {
         let current_fib: BigUint = fib_iter.next().unwrap();
         let length = current_fib.to_str_radix(10).chars().count();
         if length >= n {
-            break
+            break index
         }
         index += 1;
     }
-    index
 }
