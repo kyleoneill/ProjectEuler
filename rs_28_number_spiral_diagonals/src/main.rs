@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::time::{Instant};
 const SPIRAL_LENGTH: u32 = 1001;
 
@@ -21,11 +22,23 @@ impl Diagonal {
 
 fn main() {
     let start = Instant::now();
-    let solution = spiral_diagonals(SPIRAL_LENGTH);
+    let solution = fast_spiral_diagonals(SPIRAL_LENGTH);
     println!("Found solution in {:?} microseconds", start.elapsed().as_micros());
     println!("The answer is {}", solution);
 }
 
+//Second Attempt
+//Found formula to add layers - Sum of 4(4n^2 + n + 1) where n is the diagonal length
+fn fast_spiral_diagonals(spiral_length: u32) -> u32 {
+    let len = (spiral_length + 1) / 2;
+    let mut sum = 1;
+    for n in 1..len {
+        sum += (16 * square(n)) + (4 * n) + 4;
+    }
+    sum
+}
+
+//First Attempt
 fn spiral_diagonals(spiral_length: u32) -> u32 {
     let mut diagonal = Diagonal::new();
     let mut running_sum = 1;
