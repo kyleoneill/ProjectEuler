@@ -1,5 +1,5 @@
 [package]
-name = "rs_22_names_scores"
+name = "27_quadratic_primes"
 version = "0.1.0"
 authors = ["kyle o'neill <kyleoneill24@gmail.com>"]
 edition = "2018"

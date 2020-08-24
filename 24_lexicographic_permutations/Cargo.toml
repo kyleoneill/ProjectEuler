@@ -1,5 +1,5 @@
 [package]
-name = "rs_23_non_abundant_sums"
+name = "24_lexicographic_permutations"
 version = "0.1.0"
 authors = ["kyle o'neill <kyleoneill24@gmail.com>"]
 edition = "2018"

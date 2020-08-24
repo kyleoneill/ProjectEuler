@@ -1,5 +1,5 @@
 [package]
-name = "rs_28_number_spiral_diagonals"
+name = "26_reciprocal_cycles"
 version = "0.1.0"
 authors = ["kyle o'neill <kyleoneill24@gmail.com>"]
 edition = "2018"

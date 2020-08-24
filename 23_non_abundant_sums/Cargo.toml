@@ -1,5 +1,5 @@
 [package]
-name = "rs_21_amicable_numbers"
+name = "23_non_abundant_sums"
 version = "0.1.0"
 authors = ["kyle o'neill <kyleoneill24@gmail.com>"]
 edition = "2018"
